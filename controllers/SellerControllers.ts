@@ -136,7 +136,8 @@ export const deleteProduct = async (req: Request, res: Response) => {
   //Get Seller ID From Middleware
   const seller: any = req.seller;
   const sellerId = seller.sellerId;
-console.log(targetProductID);
+  //console.log(targetProductID);
+  
   //Target Product Data
   const productToBeDeleted = await models.products.findOne({
     where: {
